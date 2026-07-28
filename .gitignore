@@ -1,0 +1,70 @@
+# --- Secrets & local env ---
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Node (Cursor SDK bridge) ---
+node_modules/
+
+# --- Runtime / agent state ---
+logs/
+*.log
+agent_memory.json
+.cursor-agent-session*.json
+.dbt_agent_state.json
+**/.dbt_agent_state.json
+**/.dbt_agent/
+
+# --- dbt artifacts (if ever generated under this repo) ---
+target/
+dbt_packages/
+logs/
+**/target/
+**/dbt_packages/
+**/logs/
+profiles.yml
+**/profiles.yml
+
+# --- Code intelligence / local indexes ---
+.codegraph/
+
+# --- IDE / editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Optional local scratch ---
+*.tmp
+*.bak
+*.orig
